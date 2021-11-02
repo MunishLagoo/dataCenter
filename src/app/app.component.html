@@ -1,2 +1,14 @@
-<app-navbar></app-navbar>
+<!--option - 1 :  
+    call function from one component to another
+    using "#" local template variable to access controller.
+
+<app-navbar (onRefresh)="dashboard.generateData()"></app-navbar>
+<app-dashboard #dashboard></app-dashboard>
+-->
+
+<!--option - 2 :  
+    Using VIEWCHILD to access child component controller.
+    
+-->
+<app-navbar (onRefresh)= "refresh()"></app-navbar>
 <app-dashboard></app-dashboard>
